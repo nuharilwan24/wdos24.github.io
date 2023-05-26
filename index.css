@@ -1,0 +1,135 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    font-size: 1.953125vw;
+}
+h2{
+    /*vw is used in order to make the web page responsive*/
+    font-size: 1.6276041666666667vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+}
+#img3, #img4, #img5{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 2%;
+}
+.bg-img {
+    /*this CSS stylings are used to create a main responsive image*/
+    background-image: url("images/HP4.jpg");
+    min-width: 500px;
+    min-height:710px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-left: 1%;
+    padding-top: 0.5%;
+}
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1067708333333333vw;
+}
+.topnav a:hover {
+    /*this creates an effect on the navigation bar*/
+    background-color: #ddd;
+    color: black;
+}
+#ul1{
+    /*the list style changes the normal disc to the the square bullet point*/
+    list-style: square;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.1067708333333333vw;
+}
+#ol1{
+    padding-left: 5%;
+    padding-right: 10%;
+    list-style: upper-roman;
+    font-size: 1.1067708333333333vw;
+    color: black;
+}
+#para1, #para2, #para3, #para4{
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.1067708333333333vw;
+}
+.dropdown{
+    list-style: none;
+}
+#img3, #img4, #img5{
+    height: 20vw;
+    width: 40vw;
+}
+.row{
+    padding: 1em 1em;
+}
+.row.primary{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+h4 {
+    width: 100%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #c7940a;
+  }
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  }
+  .column-links ul li a{
+    transition: all 0.3s ease;
+  }
